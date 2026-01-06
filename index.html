@@ -135,30 +135,26 @@
 </section>
 <div class="feedback-container">
     <h2>Feedback</h2>
+    <!-- Google Form Embed Start -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhM4Vrhf2Qo5ZeZ7jk5jO2nvcaLGdvutmLf23jmPbHvgLpMg/viewform?embedded=true"
+            width="640" height="685" frameborder="0" marginheight="0" marginwidth="0">
+        Loading…
+    </iframe>
+    <!-- Google Form Embed End -->
 
-    <form id="feedbackForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Enter your feedback" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-
-    <p id="message"></p>
+    <!-- Optional WhatsApp button -->
+    <p>Or give feedback via WhatsApp:</p>
+    <a href="https://wa.me/9080290975?text=Hello,%20I%20want%20to%20give%20feedback%20for%20Anbu%20Health%20Mix." 
+       target="_blank" class="btn">
+        Give Feedback via WhatsApp
+    </a>
 </div>
-<!-- Feedback Section End -->
-
-<script>
-document.getElementById("feedbackForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    document.getElementById("message").innerText = "Thanks for your feedback!";
-    this.reset();
-});
-</script>
 <footer>
     <p>© 2025 Anbu Homemade Health Mix</p>
 </footer>
 </body>
 </html>
+
 
 
 
