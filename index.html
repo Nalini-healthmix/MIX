@@ -137,9 +137,29 @@
 <footer>
     <p>© 2025 Anbu Homemade Health Mix</p>
 </footer>
+<div class="feedback-container">
+    <h2>Feedback</h2>
 
+    <form id="feedbackForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Enter your feedback" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+<!-- Feedback Section End -->
+
+<script>
+document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("message").innerText = "Thanks for your feedback!";
+    this.reset();
+});
+</script>
 </body>
-
 </html>
+
 
 
