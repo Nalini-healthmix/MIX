@@ -152,3 +152,17 @@ header {
     background-color: #1ebe57;
     transform: scale(1.05);
 }
+#reviews {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+
