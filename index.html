@@ -149,11 +149,46 @@
         Give Feedback via WhatsApp
     </a>
 </div>
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div id="reviewList">Loading reviews...</div>
+</section>
+
 <footer>
     <p>© 2025 Anbu Homemade Health Mix</p>
 </footer>
+<script>
+const sheetId = "14ll1cgZYV2lpgOZ14tHkpWXqCMiVeXyeeuuvGdnEAI4";
+const sheetName = "Form Responses 1";
+
+const url = `https://opensheet.elk.sh/${sheetId}/${sheetName}`;
+
+fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    let html = "";
+
+    data.forEach(row => {
+      html += `
+        <div class="review">
+          ⭐⭐⭐⭐⭐
+          <p>"${row["Feedback:"]}"</p>
+          <strong>- ${row["Name:"]}</strong>
+        </div>
+      `;
+    });
+
+    document.getElementById("reviewList").innerHTML = html;
+  })
+  .catch(() => {
+    document.getElementById("reviewList").innerText =
+      "Reviews is not loaded. Try after few minutes";
+  });
+</script>
+
 </body>
 </html>
+
 
 
 
