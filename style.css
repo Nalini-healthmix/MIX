@@ -152,17 +152,37 @@ header {
     background-color: #1ebe57;
     transform: scale(1.05);
 }
+/* Review Section Styling */
 #reviews {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#reviewList {
+    display: block; /* Make sure it's visible */
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .review {
-  background: #f9f9f9;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.review p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.review strong {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #555;
+}
 
